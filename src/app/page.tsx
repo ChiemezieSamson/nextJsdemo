@@ -1,5 +1,19 @@
+import Link from "next/link"
+import Links from "./component/Links"
+
 const page = () => {
-  return <h1 className="text-cener text-3xl text-pink-400">Hello, me</h1>
+ 
+  return (
+    <div>
+      <header>
+        <nav>
+          <Link href={"/dashboard"}>Dashboard</Link>
+          <Links />
+        </nav>
+      </header>
+
+    </div>
+  )
 }
 
 export default page 

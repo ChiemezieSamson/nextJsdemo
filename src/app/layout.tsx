@@ -10,14 +10,15 @@ export const metadata: Metadata = {
 }
 
 
-const  RootLayout = ({children}: {children: React.ReactNode}) => {
+const  RootLayout = (props: {children: React.ReactNode, team: React.ReactNode}) => {
   return (
     <html lang="en">
       <body>
         <header>
           <h1>fuck you</h1>
         </header>
-        {children}
+        {props.children}
+        {props.team}
       </body>
     </html>
   )
